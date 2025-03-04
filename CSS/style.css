@@ -1,0 +1,89 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {   
+    background-color: #2b2b3c;    
+    color: fff;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.img  {
+    align-items: left;
+}
+header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #222233;
+     padding: 15px 10px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+    list-style: none;    
+    
+}
+nav ul li {
+     margin: 0%;    
+
+    
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;   
+    
+}
+.hero {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 28px;
+}
+.hero span {
+    font-weight: bold;
+    font-size: 32px;
+    color: #fff;     
+}
+.hero p {
+    margin: 20px 0;
+}
+.hero button {
+    background-color: #ff6600;
+    color: white;
+    padding:40px 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: #ff6600;
+}
+.features .feature {
+    text-align: center;
+    width: 30%;
+}
+.pricing .plan button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+    padding: 20px; 
+    background-color: #222233;
+}
