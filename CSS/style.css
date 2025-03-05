@@ -1,45 +1,55 @@
 body {  
-    display: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    background-color: #1f1b2d;       
-    color: #ccc;    
+    
+    font-family: Arial, Helvetica, sans-serif;    
+    background-color: #1f1b2d;
+    justify-content: border-box;       
+    color: #ccc;
+    align-items: right;
+    
+    margin: 10px; 
+    padding: 10px;   
     
     }
-div {
-    display: block;
+div {   
     unicode-bidi: isolate;
     padding: 50px;
-}
-header {
-    text-align: left;
-    padding: 10px;
+} 
+header { 
+         
+    text-align: left;    
+    padding: 2px;
     background: #252331;
-}
-.logo img {
-    align-self: auto;
-    width: 100%vw;
-    padding: 40px;
+    unicode-bidi: isolate;
     
 }
+.logo img { 
+     font-weight: bold;
+     width: 80px;  
+}
 .logo {
-    display: flex;
-    align-items: left; 
+    display: flex;       
     font-size: 20px;
     color: #fff;    
 }
+div.logo { 
+    font-weight: bold;
+    text-align: left;
+}
 .logo p {
+    display: block;
     font-size: 10px;
     color: #aaa;
+    unicode-bidi: isolate;
+
 }
 nav {
-    display: flex;
-    justify-content: flex-end;
+    
+    text-align: right;   
     background-color: #2a2538;
-    padding: 15px;
+    padding: 100px;
 }
 nav ul li {
-    display: inline;
+    display: flexbox;
 }
 nav ul li a  {
     color: #fff;    
@@ -83,62 +93,56 @@ nav a:hover {
     padding: 50px;
 }
 .features {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px;  
-    background-color: #a56337;
+
+    padding-top: 10px;
+    justify-content: space-between;
+    padding: 15px;  
+    background-color: #e68a5d;
 }
-.features .feature {
+.feature {
+    flex: 1;
     text-align: center;
+    padding: 15px;
     width:  20px;  
 
 }
-.price-section {
-    text-align: center;
-    margin-bottom:  50px 20px;
+.feature img {
+    flex: auto;
+    width: 100px;
 }
-
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-} 
-
 .pricing-section {
     text-align: center;
-    padding: 50px 20px;    
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
-h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-.pricing-card p {
-    color: black;
-    background-color: lightblue;
-    font-size: 20px;
-}  
+
 .pricing-container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     gap: 20px;
     flex-wrap: wrap;
+    
 } 
-.pricing-card {
-    background: #1f1b2d;
+.pricing-card {   
+    
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px;
     text-align: center;
     width: 200px;
+    transition: 0.3s;
+    background-color: #252331;
 }
 .popular {
     border: 2px solid #007bff;
-}
-    
+}    
 
-h3 {
+.pricing h3 {
+    color: #ccc;
     font-size: 2rem;    
     margin-bottom: 10px;    
-    background-color: #2a2538;
+    
 }
 
     
@@ -155,13 +159,63 @@ ul li {
 .pricing .plan button {
     background-color: #ff6600;
     color: white;
-    padding: 10px;
+    padding: 10px 15px;
     border: none;
     cursor: pointer;
     margin-top: 10px;
 }
-footer {
-    text-align: center;
-    padding: 20px; 
-    background-color: #222233;
+
+button {
+    background-color: #ff6600;
+} 
+.hosting h3 {
+    color: #ccc;
+    font-size: 2rem;    
+    margin-bottom: 10px;    
+    background-color: #2a2538;
 }
+
+
+.hosting-section  {
+    text-align: center;
+    padding: 50px 20px;
+    display: flex; 
+    justify-content: space-around;
+}
+.hosting-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.hosting {
+    background: rgb(1, 1, 27);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    width: 200px; 
+    transition: 0.3s;      
+}
+.hosting-column {
+    width: 90%;
+    flex-direction: row;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+.popular { 
+    border: 2px;
+
+
+}
+.hosting button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: none;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+    
+    
+    
